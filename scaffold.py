@@ -17,12 +17,12 @@ def file_gen(x):
       return
       
   sys.stderr.write("Creating directory and file... \n")
-  new_dir.mkdir()
+  new_dir.mkdir(exist_ok=True)
   fout = open(f"{new_file}","w")
   fout.write("#!/usr/bin/env python3 \n") 
   fout.write("import sys \n\n") 
   fout.write("def main():\n")
-  fout.write("  sys.stderr.write(\"This is a practice file to generate a template file!\\n\")")
+  fout.write("  sys.stderr.write(\"This is a practice file to generate a template file!\\n\")\n")
   fout.write("  sys.stdout.write(\"Hello world!\\n\")\n")
   fout.write("if __name__ == \"__main__\":\n")
   fout.write("  main()\n")     
