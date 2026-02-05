@@ -22,7 +22,7 @@ def file_gen(x):
   fout.write("#!/usr/bin/env python3 \n") 
   fout.write("import sys \n\n") 
   fout.write("def main():\n")
-  fout.write("  sys.stderr.write(\"This is a practice file to generate a template file!\n")\n")
+  fout.write("  sys.stderr.write(\"This is a practice file to generate a template file!\\n\")\n")
   fout.write("  sys.stdout.write(\"Enter the title of this file: \n"\n")
   fout.write("  title=input()\n")
   fout.write(  sys.stdout.write(f\"The title of this document is: {title}\")\n\n)
