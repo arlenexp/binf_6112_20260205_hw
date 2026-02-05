@@ -23,7 +23,7 @@ def file_gen(x):
   fout.write("import sys \n\n") 
   fout.write("def main():\n")
   fout.write("  sys.stderr.write(\"This is a practice file to generate a template file!\\n\")")
-  fout.write("  sys.stdout.write(\"Enter the title of this file: \n")")
+  fout.write("  sys.stdout.write(\"Enter the title of this file: \\n\")\n")
   fout.write("  title=input()\n")
   fout.write(  sys.stdout.write(f\"The title of this document is: {title}\n"))
   fout.write("if __name__ == \"__main__\":\n")
