@@ -8,7 +8,7 @@ def file_gen(x):
   new_file = new_dir / f"{x}.txt"
 
   sys.stdout.write(f"Checking to see if file or directory '{x}' exist.... \n")
-  if new_file.exists or new_dir.exists(): 
+  if new_file.exists() or new_dir.exists(): 
     sys.stderr.write("This file already exists, do you wish to replace it? Enter 'Y' or 'N': ")
     choice = input().strip().lower()
 
